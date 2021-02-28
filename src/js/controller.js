@@ -130,6 +130,10 @@ const controlAddRecipe = async function (newRecipe) {
   // console.log('newRecipe: ', newRecipe);
 };
 
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -138,6 +142,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  // document.querySelector('.search__field').focus(); // When page loads, focus on the input field. (Fix it so that it only does this the first time and not on every refresh)
+  newFeature();
 };
 init();
